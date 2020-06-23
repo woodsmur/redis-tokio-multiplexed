@@ -1,0 +1,9 @@
+[package]
+name = "redis_example"
+version = "0.1.0"
+authors = ["woods <woods@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+redis = { version = "0.16.0", features = ["tokio-comp", "tokio-rt-core", "async-std-comp"] }
+tokio = { version = "0.2.21", features = ["full"] }
